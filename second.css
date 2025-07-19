@@ -10,40 +10,7 @@ body {
   color: #fff;
   overflow-x: hidden;
 }
-
-/* HERO SECTION */
-.hero {
-  height: 200vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg,rgb(248, 240, 240),rgb(255, 250, 250));
-  text-align: center;
-  padding: 2rem;
-}
-.hero-title {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-.hero-subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: #bbb;
-}
-.btn {
-  background: #00ffe0;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-}
-.btn:hover {
-  transform: scale(1.05);
-}
-
-
+/*header*/
 /* HEADER */
 .header {
   position: fixed;
@@ -154,9 +121,41 @@ body {
     margin: 10px 0;
   }
 }
+/* HERO SECTION */
+.hero {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg,rgb(248, 240, 240),rgb(255, 250, 250));
+  text-align: center;
+  padding: 2rem;
+}
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #bbb;
+}
+.btn {
+  background: #00ffe0;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
 /* SOLAR SYSTEM HERO */
 .hero {
-  height: 120vh;
+  height: 100vh;
   background: transparent;
   display: flex;
   justify-content: center;
@@ -347,18 +346,28 @@ body {
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
+    align-items: center;
     text-align: center;
+    padding: 0 16px;
   }
+
+  .text-side .slogan p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+
   .solar-system {
-    width: 300px;
-    height: 300px;
+    width: 280px !important;
+    height: 280px !important;
   }
+
+  .planet {
+    font-size: 10px;
+  }
+  
   .brand-name {
     font-size: 2.5rem;
-  }
-  .planet {
-    width: 14px;
-    height: 14px;
   }
   .moon {
     width: 6px;
@@ -479,7 +488,7 @@ body {
 
 
 /* ✅ Responsive for phones */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .tab-list {
     flex-wrap: norway;
     overflow-x: auto;
