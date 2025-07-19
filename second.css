@@ -128,7 +128,7 @@ body {
 }
 /* SOLAR SYSTEM HERO */
 .hero {
-  height: 130vh;
+  height: 100vh;
   background: transparent;
   display: flex;
   justify-content: center;
