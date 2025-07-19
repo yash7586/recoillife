@@ -64,7 +64,6 @@
 </section>
   <!-- Sticky Capsule Navigation -->
 <nav class="sticky-tabs">
-  <nav class="navbars" id="navbars">
   <ul class="tab-list">
 
     <li class="tab-item"><a href="#">Research-Ai Lab</a></li>
@@ -73,15 +72,13 @@
     <li class="tab-item"><a href="#">Learning</a></li>
   </ul>
 </nav>
-</nav>
-<div class="hamburge" id="hamburge">&#9776;</div>
 </section>
 
 <!-- STICKY HEADER -->
 <header class="header">
   <div class="nav-container">
-     <img src="Untitled-0.png" alt="Recoil Life Logo" class="site-logo">
-</a>
+     <img src="Untitled-0.png" alt="Recoil Life Logo" class="site-logo"></a>
+     <div class="hamburger" id="hamburger">&#9776;</div>
     <nav class="navbar" id="navbar">
     <nav class="nav-right">
       <a href="http://www.tenseai.in/" class="btn-contact">Try TenseAi</a>
@@ -91,7 +88,7 @@
         <a href="https://youtube.com/@recoillife?si=dd95Qfab_jnfVKW1"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Youtube" /></a>
     </nav>
     </nav>
-    <div class="hamburger" id="hamburger">&#9776;</div>
+    
   </div>
 </header>
 <style>
@@ -335,5 +332,16 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   <script src="third.js"></script>
+  <script>
+  document.getElementById("languageSelect").addEventListener("change", function () {
+  alert("Language changed to: " + this.value);
+});
+//header
+const hamburger = document.getElementById('hamburger');
+const navbar = document.getElementById('navbar');
+
+hamburger.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+});</script>
 </body>
 </html>
