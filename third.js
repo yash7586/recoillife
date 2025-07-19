@@ -210,3 +210,10 @@ window.addEventListener('DOMContentLoaded', () => {
 document.getElementById("languageSelect").addEventListener("change", function () {
   alert("Language changed to: " + this.value);
 });
+//header
+const hamburger = document.getElementById('hamburger');
+const navbar = document.getElementById('navbar');
+
+hamburger.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+});
