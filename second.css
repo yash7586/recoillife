@@ -479,9 +479,9 @@ body {
 
 
 /* ✅ Responsive for phones */
-@media (max-width: 300px) {
+@media (max-width: 600px) {
   .tab-list {
-    flex-wrap: nowrap;
+    flex-wrap: norway;
     overflow-x: auto;
     justify-content: flex-start;
     padding: 0 10px;
