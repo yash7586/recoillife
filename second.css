@@ -134,7 +134,6 @@ body {
   .navbar {
     display: none;
     flex-direction: column;
-    background-color: #00ffe0;
     position: absolute;
     top: 60px;
     left: 0;
@@ -479,37 +478,27 @@ body {
 }
 
 
-.hamburge {
-  display: none;
-  font-size: 28px;
-  color: #27ee48ff;
-  cursor: pointer;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbars {
-    display: none;
-    flex-direction: column;
-    background-color: #00ffe0;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
+/* ✅ Responsive for phones */
+@media (max-width: 300px) {
+  .tab-list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 0 10px;
+    scrollbar-width: none; /* Firefox */
   }
 
-  .navbars.active {
-    display: flex;
+  .tab-list::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
   }
 
-  .hamburge {
-    display: block;
+  .tab-item {
+    flex: 0 0 auto;
   }
 
-  .navbars a {
-    margin: 10px 0;
+  .tab-item a {
+    font-size: 14px;
+    padding: 6px 12px;
   }
 }
 /*our work */
