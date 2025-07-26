@@ -115,46 +115,6 @@ tabItems.forEach((tab) => {
   });
 });
 
-//our work
-const cards = document.querySelectorAll('.work-card');
-
-window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY;
-
-  cards.forEach(card => {
-    const speed = parseFloat(card.dataset.speed);
-    const offset = scrollY * speed;
-    card.style.transform = `translateY(-${offset}px)`;
-  });
-});
-// our team
-const teamCards = document.querySelectorAll('.team-card');
-
-teamCards.forEach(card => {
-  const img = card.querySelector('.team-photo');
-  const vid = card.querySelector('.team-video');
-
-  card.addEventListener('click', () => {
-    // Stop all other videos
-    teamCards.forEach(otherCard => {
-      const otherImg = otherCard.querySelector('.team-photo');
-      const otherVid = otherCard.querySelector('.team-video');
-      otherVid.pause();
-      otherVid.currentTime = 0;
-      otherVid.style.display = "none";
-      otherImg.style.display = "block";
-    });
-
-    // Show clicked video
-    img.style.display = "none";
-    vid.style.display = "block";
-    vid.muted = true;
-    vid.playsInline = true;
-    vid.play().catch(err => {
-      console.log("Video autoplay failed:", err);
-    });
-  });
-});
 
 //Blog
 
@@ -206,4 +166,4 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 // footer
-
+// Optional JS for dropdown language select
